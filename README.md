@@ -50,7 +50,7 @@ NumCompute/
 Clone the repository:
 
 ```bash
-git clone <your-repo-link>
+git clone <https://github.com/lich472/Numcompute.git>
 cd Numcompute
 ```
 
