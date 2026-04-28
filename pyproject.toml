@@ -1,0 +1,14 @@
+[project]
+name = "numcompute"
+version = "0.1.0"
+description = "A NumPy-based machine learning framework built from scratch"
+authors = [
+    { name="Ibrahim , lich , adwaith ,aditeya" }
+]
+dependencies = [
+    "numpy"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

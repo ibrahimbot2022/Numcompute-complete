@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 .dist/
 .env
+demo/*.csv
+demo/task_demo.py
