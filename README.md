@@ -17,7 +17,11 @@ It replicates core functionality of libraries like scikit-learn, focusing on **n
 * Pipeline abstraction for chaining transformations
 * Utility functions (activations, distances, batching, logsumexp)
 * Benchmarking (loop vs vectorised performance comparison)
-
+* Decision Tree classifier implementation
+* Ensemble classifier using multiple decision trees
+* Streaming / incremental learning support
+* Stream-based model training and evaluation
+* Performance visualisation utilities
 ---
 
 ## Project Structure
@@ -34,10 +38,29 @@ NumCompute/
 │   ├── optim.py
 │   ├── pipeline.py
 │   ├── utils.py
-│   └── benchmarking.py
+│   ├── benchmarking.py
+│   ├── tree.py
+│   ├── ensemble.py
+│   ├── stream.py
+│   └── visualise.py
 ├── tests/
+│   ├── test_io.py
+│   ├── test_preprocessing.py
+│   ├── test_sort_search.py
+│   ├── test_rank.py
+│   ├── test_stat.py
+│   ├── test_metrics.py
+│   ├── test_optim.py
+│   ├── test_pipeline.py
+│   ├── test_utils.py
+│   ├── test_benchmarking.py
+│   ├── test_tree.py
+│   ├── test_ensemble.py
+│   ├── test_stream.py
+│   └── test_visualise.py
 ├── demo/
-│   └── quickstart.ipynb
+│   ├── quickstart.ipynb
+│   └── stream_demo.ipynb
 ├── pyproject.toml
 ├── requirements.txt
 └── README.md
@@ -69,6 +92,11 @@ pip install -e .
 ```bash
 cd demo
 jupyter notebook quickstart.ipynb
+```
+or 
+```bash
+cd demo
+jupyter notebook stream_demo.ipynb
 ```
 
 ### Option 2 (Install and run)
